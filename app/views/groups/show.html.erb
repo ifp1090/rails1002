@@ -33,7 +33,7 @@
         </tr>
       <% end %>
     </tbody>
-  </table><p><%= @group.description %></p>
+  </table><p><%= simple_format(@group.description) %></p>
   <div class="text-center">
 <%= will_paginate @posts %>
   </div>
